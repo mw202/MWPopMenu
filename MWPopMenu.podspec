@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MWPopMenu'
-  s.version          = '0.8.0'
+  s.version          = '0.9.0'
   s.summary          = 'MWPopMenu Swift.'
 
 # This description is used to generate tags and improve search results.
@@ -28,14 +28,14 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/mw202/MWPopMenu.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '12.0'
+  s.ios.deployment_target = '10.0'
   s.swift_version = '4.0'
 
   s.source_files = 'MWPopMenu/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'MWPopMenu' => ['MWPopMenu/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'MWPopMenu' => ['MWPopMenu/Assets/*.{xib,swift}']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

@@ -8,21 +8,21 @@
 
 import UIKit
 
-class MWPopMenuItemTableViewCell: UITableViewCell {
+public class MWPopMenuItemTableViewCell: UITableViewCell {
 
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var imageViewIcon: UIImageView!
     @IBOutlet weak var viewBottomLine: UIView!
     @IBOutlet weak var layoutIconLeft: NSLayoutConstraint!
     
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         
         backgroundColor = .clear
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
+    public override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state

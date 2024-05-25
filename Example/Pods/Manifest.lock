@@ -1,5 +1,5 @@
 PODS:
-  - MWPopMenu (0.1.0)
+  - MWPopMenu (0.9.0)
 
 DEPENDENCIES:
   - MWPopMenu (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MWPopMenu: ea158cab0c6bcc3d7ae108f9b4475f77aa1d7c0a
+  MWPopMenu: e3c205df12d155fef7994476a61f0c1ba963ddab
 
-PODFILE CHECKSUM: 8a3208970057dec173f8eda0988f144399b8f3a4
+PODFILE CHECKSUM: c67f61a0f0049809ec1ad8aeef31a905922424fe
 
 COCOAPODS: 1.15.2

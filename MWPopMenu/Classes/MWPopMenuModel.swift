@@ -8,8 +8,14 @@
 
 import UIKit
 
-struct MWPopMenuModel {
-    var isEnabled: Bool = true
-    var icon: UIImage?
-    var title: String?
+public struct MWPopMenuModel {
+    public var isEnabled: Bool = true
+    public var icon: UIImage?
+    public var title: String?
+    
+    public init(icon: UIImage?, title: String?, isEnabled: Bool = true) {
+        self.icon = icon
+        self.title = title
+        self.isEnabled = isEnabled
+    }
 }

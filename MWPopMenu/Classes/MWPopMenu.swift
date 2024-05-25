@@ -8,20 +8,20 @@
 
 import UIKit
 
-protocol MWPopMenuDataSource: NSObjectProtocol {
+public protocol MWPopMenuDataSource: NSObjectProtocol {
     func mwMenuDatas(_ menu: MWPopMenu) -> [MWPopMenuModel]?
 }
 
-protocol MWPopMenuDelegate: NSObjectProtocol {
+public protocol MWPopMenuDelegate: NSObjectProtocol {
     func mwPopMenuDidSelectIndex(_ view: MWPopMenu, index: Int)
 }
 
 // MARK: - MWPopMenu
 
-class MWPopMenu: UIView {
+public class MWPopMenu: UIView {
 
-    weak var dataSource: MWPopMenuDataSource?
-    weak var delegate: MWPopMenuDelegate?
+    public weak var dataSource: MWPopMenuDataSource?
+    public weak var delegate: MWPopMenuDelegate?
     
     public var didSelectMenuBlock: ((_ view: MWPopMenu, _ index: Int) -> Void)?
     
@@ -38,12 +38,12 @@ class MWPopMenu: UIView {
     private var menuWidth: CGFloat = UIScreen.main.bounds.width
     private var datas: [MWPopMenuModel] = []
     
-    let cellId = String(describing: MWPopMenuItemTableViewCell.self)
+    let cellId = "MWPopMenuItemTableViewCell"// String(describing: MWPopMenuItemTableViewCell.self)
     private var tableFrame: CGRect = .zero
     private var arrowView: UIView!
     var tableView: UITableView!
     
-    init(configure: MWPopMenuConfigure = MWPopMenuConfigure.default) {
+    public init(configure: MWPopMenuConfigure = MWPopMenuConfigure.default) {
         super.init(frame: UIScreen.main.bounds)
         
         frame = UIScreen.main.bounds
@@ -88,8 +88,17 @@ class MWPopMenu: UIView {
         
         tableView = UITableView(frame: tableFrame, style: .plain)
         // tableView超出刘海时，会空出一截
-        tableView.contentInsetAdjustmentBehavior = .never
-        tableView.register(UINib(nibName: cellId, bundle: nil), forCellReuseIdentifier: cellId)
+        if #available(iOS 11.0, *) {
+            tableView.contentInsetAdjustmentBehavior = .never
+        } else {
+            // Fallback on earlier versions
+        }
+
+        var bundle = Bundle.main
+        if let url = Bundle(for: Self.self).url(forResource: "MWPopMenu", withExtension: "bundle") {
+            bundle = Bundle(url: url) ?? Bundle.main
+        }
+        tableView.register(UINib(nibName: cellId, bundle: bundle), forCellReuseIdentifier: cellId)
         tableView.backgroundColor = menuConfigure.backgroundColor
         tableView.layer.cornerRadius = menuConfigure.cornorRadius
         tableView.layer.masksToBounds = true
@@ -102,17 +111,21 @@ class MWPopMenu: UIView {
         }
     }
     
-    func safeDistanceTop() -> CGFloat {
-        return UIApplication.shared.windows.last?.safeAreaInsets.top ?? 0
-    }
-    
     /// 顶、左、右、tableView原点、是否箭头朝上
     private func getArrowPoints() -> (arrow: (top: CGPoint, left: CGPoint, right: CGPoint),
                                       tableOriginal: CGPoint,
                                       isArrowUp: Bool) {
-        let safeArea = UIApplication.shared.windows.last?.safeAreaInsets
-        let safeTop = safeArea?.top ?? 0
-        let safeBottom = safeArea?.bottom ?? 0
+        var safeArea: UIEdgeInsets?
+        if #available(iOS 11.0, *) {
+            safeArea = UIApplication.shared.windows.last?.safeAreaInsets
+        } else {
+            // Fallback on earlier versions
+            let viewController = UIApplication.shared.windows.last?.rootViewController
+            safeArea = UIEdgeInsets(top: viewController?.topLayoutGuide.length ?? 0, left: 0, bottom: viewController?.bottomLayoutGuide.length ?? 0, right: 0)
+        }
+        let safeAreaTop = safeArea?.top ?? 0
+        let safeAreaBottom = safeArea?.bottom ?? 0
+        
         var bUp = false //
         if let r = targetRect {
             arrowPoint.x = r.midX
@@ -124,7 +137,7 @@ class MWPopMenu: UIView {
         
         arrowPoint.x = max(menuConfigure.margin, min(arrowPoint.x, kScreenWidth - menuConfigure.margin))
         // 不能超过安全区
-        tableFrame.size.height = bUp ? min(kScreenHeight - arrowPoint.y - arrowHeight - safeBottom, tableFrame.height) : min(arrowPoint.y - arrowHeight - safeTop, tableFrame.height)
+        tableFrame.size.height = bUp ? min(kScreenHeight - arrowPoint.y - arrowHeight - safeAreaBottom, tableFrame.height) : min(arrowPoint.y - arrowHeight - safeAreaTop, tableFrame.height)
         
         var originalPoint = CGPoint.zero
         var arrowMargin: CGFloat = menuConfigure.margin
@@ -196,11 +209,11 @@ class MWPopMenu: UIView {
 // MARK: - Table view data source
 
 extension MWPopMenu: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return datas.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? MWPopMenuItemTableViewCell {
             let item = datas[indexPath.row]
             cell.setCell(item, configure: menuConfigure, isLast: (indexPath.row == datas.count - 1))
@@ -215,19 +228,19 @@ extension MWPopMenu: UITableViewDataSource {
 // MARK: - Table view delegate
 
 extension MWPopMenu: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    private func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return CGFloat.leastNormalMagnitude
     }
     
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+    private func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return CGFloat.leastNormalMagnitude
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    private func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return menuConfigure.itemHeight
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    private func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let item = datas[indexPath.row]
         if item.isEnabled == false { return }
         
@@ -241,7 +254,7 @@ extension MWPopMenu: UITableViewDelegate {
 // MARK: -
 
 extension MWPopMenu {
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if touches.first?.view != tableView {
             dismiss()
         }

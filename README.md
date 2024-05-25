@@ -5,13 +5,13 @@
 [![License](https://img.shields.io/cocoapods/l/MWPopMenu.svg?style=flat)](https://cocoapods.org/pods/MWPopMenu)
 [![Platform](https://img.shields.io/cocoapods/p/MWPopMenu.svg?style=flat)](https://cocoapods.org/pods/MWPopMenu)
 
-## Example
+## 说明
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+Swift弹出式菜单，[在此](https://www.jianshu.com/p/9d0f50f4a50a)基础上进行优化。
 
-## Requirements
+![截图1](/docs/screenshot1.png)
 
-## Installation
+## 安装
 
 MWPopMenu is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
@@ -19,6 +19,19 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'MWPopMenu'
 ```
+
+## 使用
+
+* 使用dataSource设置数据
+
+  ```Swift
+  func mwMenuDatas(_ menu: MWPopMenu) -> [MWPopMenuModel]?
+  ```
+* 使用delegate或block处理点击事件
+
+  ```Swift
+  func mwPopMenuDidSelectIndex(_ view: MWPopMenu, index: Int)
+  ```
 
 ## Author
 
