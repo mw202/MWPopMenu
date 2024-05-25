@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'MWPopMenu_Example' do
+  pod 'MWPopMenu', :path => '../'
+
+  target 'MWPopMenu_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
