@@ -1,0 +1,22 @@
+{
+  "name": "MWPopMenu",
+  "version": "0.1.0",
+  "summary": "A short description of MWPopMenu.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/mw202/MWPopMenu",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "mw202": "250230331@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/mw202/MWPopMenu.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "MWPopMenu/Classes/**/*"
+}

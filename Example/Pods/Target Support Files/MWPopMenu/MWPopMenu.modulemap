@@ -1,0 +1,6 @@
+framework module MWPopMenu {
+  umbrella header "MWPopMenu-umbrella.h"
+
+  export *
+  module * { export * }
+}
