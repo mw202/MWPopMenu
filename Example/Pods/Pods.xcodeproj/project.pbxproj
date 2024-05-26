@@ -61,12 +61,12 @@
 		3B50D1BF75FF1504BFEC402C92C6C923 /* MWPopMenu-MWPopMenu */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "MWPopMenu-MWPopMenu"; path = MWPopMenu.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BED9F555249BECEEBB7FD9E71921ED9 /* Pods-MWPopMenu_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MWPopMenu_Example-dummy.m"; sourceTree = "<group>"; };
 		3F5B190DAB4AA476F1E5CDF39454C3CF /* Pods-MWPopMenu_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MWPopMenu_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		475428184880491FEB4FC0B8D4988BCE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		475428184880491FEB4FC0B8D4988BCE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		476C102FDDF710A5A9B1FC82CEC64237 /* MWPopMenuConfigure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MWPopMenuConfigure.swift; path = MWPopMenu/Classes/MWPopMenuConfigure.swift; sourceTree = "<group>"; };
 		4F58A4B6CC51624412C315B1E9F638E7 /* Pods-MWPopMenu_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MWPopMenu_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		50BDBF6055063B4AD12792CC585CF6E5 /* Pods-MWPopMenu_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MWPopMenu_Example"; path = Pods_MWPopMenu_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		513A92EE1C634F472A9401020C5AB1D8 /* Pods-MWPopMenu_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MWPopMenu_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		52CE5BE4E1E3AFFE5213F22E54318F8C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		52CE5BE4E1E3AFFE5213F22E54318F8C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		5AD45728320A51FD904A12BE059675E7 /* Pods-MWPopMenu_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MWPopMenu_Tests-dummy.m"; sourceTree = "<group>"; };
 		60D090E4A31ECD20B3D3088563E56E77 /* Pods-MWPopMenu_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MWPopMenu_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		642A158FBFA188D61DD6AF441C3635F8 /* MWPopMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MWPopMenu.swift; path = MWPopMenu/Classes/MWPopMenu.swift; sourceTree = "<group>"; };
@@ -77,8 +77,8 @@
 		96442D0899AA7BF35345527E4C7B1EA6 /* MWPopMenu */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MWPopMenu; path = MWPopMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D51D57A7FBB622CA233649ECA4E3D9 /* Pods-MWPopMenu_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MWPopMenu_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		974A315D857422C201C0FFD4BBF756EF /* Pods-MWPopMenu_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MWPopMenu_Tests"; path = Pods_MWPopMenu_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BA481E36347D03A5FEC498C40253FD0 /* MWPopMenu.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MWPopMenu.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9BA481E36347D03A5FEC498C40253FD0 /* MWPopMenu.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MWPopMenu.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AAFB042258EE067C125966D1E2C6BAF3 /* MWPopMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MWPopMenu-Info.plist"; sourceTree = "<group>"; };
 		B584F5FB81CD8FECDB6FA6E2F3DF8E94 /* Pods-MWPopMenu_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MWPopMenu_Tests.modulemap"; sourceTree = "<group>"; };
 		BEC4D56A6AD6F3F3E697559837782B0D /* Pods-MWPopMenu_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MWPopMenu_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -705,8 +705,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

@@ -35,10 +35,9 @@ public class MWPopMenu: UIView {
     private let arrowWidth: CGFloat = 15
     private let arrowHeight: CGFloat = 10
     
-    private var menuWidth: CGFloat = UIScreen.main.bounds.width
     private var datas: [MWPopMenuModel] = []
     
-    let cellId = "MWPopMenuItemTableViewCell"// String(describing: MWPopMenuItemTableViewCell.self)
+    let cellId = String(describing: MWPopMenuItemTableViewCell.self)
     private var tableFrame: CGRect = .zero
     private var arrowView: UIView!
     var tableView: UITableView!
@@ -46,9 +45,6 @@ public class MWPopMenu: UIView {
     public init(configure: MWPopMenuConfigure = MWPopMenuConfigure.default) {
         super.init(frame: UIScreen.main.bounds)
         
-        frame = UIScreen.main.bounds
-        
-        self.menuWidth = configure.width
         menuConfigure = configure
     }
     
@@ -190,7 +186,7 @@ public class MWPopMenu: UIView {
         targetRect = rect
         arrowPoint = point
             
-        tableFrame = CGRect(x: 0, y: 0, width: menuWidth, height: menuConfigure.itemHeight * CGFloat(datas.count))
+        tableFrame = CGRect(x: 0, y: 0, width: menuConfigure.width, height: menuConfigure.itemHeight * CGFloat(datas.count))
         tableFrame.size.height = min(kScreenHeight / 2, tableFrame.height)
         tableFrame.size.width = min(kScreenWidth - menuConfigure.margin * 2, tableFrame.width)
         
@@ -228,19 +224,19 @@ extension MWPopMenu: UITableViewDataSource {
 // MARK: - Table view delegate
 
 extension MWPopMenu: UITableViewDelegate {
-    private func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return CGFloat.leastNormalMagnitude
     }
     
-    private func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return CGFloat.leastNormalMagnitude
     }
     
-    private func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return menuConfigure.itemHeight
     }
     
-    private func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let item = datas[indexPath.row]
         if item.isEnabled == false { return }
         

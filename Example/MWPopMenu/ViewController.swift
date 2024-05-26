@@ -84,8 +84,8 @@ class ViewController: UIViewController, MWPopMenuDataSource, MWPopMenuDelegate {
     // MARK: - MWPopMenu data source
     
     func mwMenuDatas(_ menu: MWPopMenu) -> [MWPopMenuModel]? {
-        return [MWPopMenuModel(icon: #imageLiteral(resourceName: "address_book_number"), title: "新增"),
-                MWPopMenuModel(icon: #imageLiteral(resourceName: "address_book_number"), title: "扫描", isEnabled: false),]
+//        return [MWPopMenuModel(icon: #imageLiteral(resourceName: "address_book_number"), title: "新增"),
+//                MWPopMenuModel(icon: #imageLiteral(resourceName: "address_book_number"), title: "扫描", isEnabled: false),]
         return [MWPopMenuModel(icon: #imageLiteral(resourceName: "address_book_number"), title: "新增"),
                 MWPopMenuModel(icon: #imageLiteral(resourceName: "address_book_number"), title: "扫描", isEnabled: false),
                 MWPopMenuModel(icon: #imageLiteral(resourceName: "address_book_number"), title: "新增"),
