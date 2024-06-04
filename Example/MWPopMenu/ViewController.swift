@@ -28,9 +28,11 @@ class ViewController: UIViewController, MWPopMenuDataSource, MWPopMenuDelegate {
     }
     
     @IBAction func clickNavigation(_ sender: UIButton) {
-        var point = sender.convert(CGPoint(x: sender.frame.midX, y: sender.frame.maxY), to: nil)
-        point.y = max(0, point.y)
-        popMenu.show(point)
+        // 因此最好使用window来计算，参见show说明
+        let window = UIApplication.shared.keyWindow
+        let rect = window?.convert(sender.frame, from: sender.superview) ?? .zero
+        let rect1 = view.convert(sender.frame, from: sender.superview)
+        popMenu.show(.zero, rect)
     }
     
     @IBAction func click1(_ sender: UIButton) {
@@ -40,15 +42,12 @@ class ViewController: UIViewController, MWPopMenuDataSource, MWPopMenuDelegate {
     }
     
     @IBAction func click2(_ sender: UIButton) {
-        var point = view.convert(CGPoint(x: sender.frame.midX, y: sender.frame.maxY), from: sender.superview)
-        point.y = max(0, point.y)
-        let rect = view.convert(sender.frame, from: sender.superview)
+        let window = UIApplication.shared.keyWindow
+        let rect = window?.convert(sender.frame, from: sender.superview) ?? .zero
         popMenu.show(.zero, rect)
     }
     
     @IBAction func click3(_ sender: UIButton) {
-        var point = view.convert(CGPoint(x: sender.frame.midX, y: sender.frame.maxY), from: sender.superview)
-        point.y = max(0, point.y)
         let rect = view.convert(sender.frame, from: sender.superview)
         popMenu.show(.zero, rect)
     }

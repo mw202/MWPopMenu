@@ -7,85 +7,86 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B90E1975D95FEDB6DAA266615AA1C6B /* MWPopMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 390A41EE7020F163892F0869B20FC01A /* MWPopMenu-dummy.m */; };
-		1E6E3FBEF8EB131D0EAF3D08FBDB10C1 /* MWPopMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B6C1AB0FE1FE5552B19D9F74807B4E2 /* MWPopMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B90E1975D95FEDB6DAA266615AA1C6B /* MWPopMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBD3B4FF98C11122F8E47A9687C6CA3 /* MWPopMenu-dummy.m */; };
+		1E6E3FBEF8EB131D0EAF3D08FBDB10C1 /* MWPopMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E41E6549EBBD36D2D1C88C28CB2F1AD5 /* MWPopMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22DF79CEB32A676F12EE595A92EDD319 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		2F60DA1412656EA1B2EFA7A2E0E73722 /* MWPopMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097F66A3BAF8762EB1E1EC60B3F74FD4 /* MWPopMenuModel.swift */; };
+		2F60DA1412656EA1B2EFA7A2E0E73722 /* MWPopMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBEE3DAA634E4734FF4DB9F4AF92F1F /* MWPopMenuModel.swift */; };
 		2F68398C11FF1414FD884ECEE66EBD77 /* MWPopMenu-MWPopMenu in Resources */ = {isa = PBXBuildFile; fileRef = 3B50D1BF75FF1504BFEC402C92C6C923 /* MWPopMenu-MWPopMenu */; };
+		35047AEBDDF117C2CF7BB5F9350041D5 /* MWPopMenuItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235C4B69292406649D163C935BBF0290 /* MWPopMenuItemTableViewCell.xib */; };
 		3EA4899B01D283D835F367D1C4FABE81 /* Pods-MWPopMenu_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 860DCA773F462C16090C6D580C47BA1B /* Pods-MWPopMenu_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3EC5343D3748424D4F3478330501F54D /* Pods-MWPopMenu_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BED9F555249BECEEBB7FD9E71921ED9 /* Pods-MWPopMenu_Example-dummy.m */; };
-		42C4BE6A06C2F964E90304181EBD331B /* MWPopMenuItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CEF7EAFEFD1A34D2A0C79C2D94F63BB /* MWPopMenuItemTableViewCell.xib */; };
 		5E620E047FDB21E4C794B9808E06510E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		780BE4F0BE6F51A38CB76BF849C0AF6D /* MWPopMenuConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476C102FDDF710A5A9B1FC82CEC64237 /* MWPopMenuConfigure.swift */; };
-		7DFC131E84C6121912029ED43C8D10B2 /* MWPopMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642A158FBFA188D61DD6AF441C3635F8 /* MWPopMenu.swift */; };
+		780BE4F0BE6F51A38CB76BF849C0AF6D /* MWPopMenuConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860CCA90A4E2F1CB5D9161854D75631F /* MWPopMenuConfigure.swift */; };
+		7DFC131E84C6121912029ED43C8D10B2 /* MWPopMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78951B9D9625028601E960BA53734BC5 /* MWPopMenu.swift */; };
 		94D021A84FC243865AEAA05DEB98E97D /* Pods-MWPopMenu_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD45728320A51FD904A12BE059675E7 /* Pods-MWPopMenu_Tests-dummy.m */; };
-		A842A90DACC2915EE19EACBA56E01B7A /* MWPopMenuItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1B77A90FC5265C96F810E8A7081DF5 /* MWPopMenuItemTableViewCell.swift */; };
+		A842A90DACC2915EE19EACBA56E01B7A /* MWPopMenuItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEDD177BB67432CE6921F3785CBC40C /* MWPopMenuItemTableViewCell.swift */; };
 		C2A1F24EC68654A3C48291C26B33ADBE /* Pods-MWPopMenu_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B02CD8D314AD0C0FE45C2170A59267 /* Pods-MWPopMenu_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3DF7947B9CFE9D3FD876AC79D03E6FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		42161ADB2A232BC673CC0F01A8E69A8E /* PBXContainerItemProxy */ = {
+		13728763AF8739384485C6CAFF660071 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E229A9D66061546553BA208558506F00;
 			remoteInfo = "MWPopMenu-MWPopMenu";
 		};
-		E3F28752F3AA192F1F8895E5798EFFE4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E221E9B365678C229BEB4859AD63B6C2;
-			remoteInfo = "Pods-MWPopMenu_Example";
-		};
-		EC52278900F0EF4945F19000548043F2 /* PBXContainerItemProxy */ = {
+		9C93308B59ACC015F3D8BD5776BA19A6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A5EC9EB9C23B4DECC8ABA54179CF730F;
 			remoteInfo = MWPopMenu;
 		};
+		C5226708BB8395A9D6ECCF3FE48E5127 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E221E9B365678C229BEB4859AD63B6C2;
+			remoteInfo = "Pods-MWPopMenu_Example";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02C993FD8C35BCE9CDCF94C5830142EA /* MWPopMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MWPopMenu.modulemap; sourceTree = "<group>"; };
-		097F66A3BAF8762EB1E1EC60B3F74FD4 /* MWPopMenuModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MWPopMenuModel.swift; path = MWPopMenu/Classes/MWPopMenuModel.swift; sourceTree = "<group>"; };
-		0CEF7EAFEFD1A34D2A0C79C2D94F63BB /* MWPopMenuItemTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = MWPopMenuItemTableViewCell.xib; path = MWPopMenu/Assets/MWPopMenuItemTableViewCell.xib; sourceTree = "<group>"; };
-		0E1B77A90FC5265C96F810E8A7081DF5 /* MWPopMenuItemTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MWPopMenuItemTableViewCell.swift; path = MWPopMenu/Classes/MWPopMenuItemTableViewCell.swift; sourceTree = "<group>"; };
-		16358A46A27ED51A4752D5BD5CD14BB8 /* MWPopMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MWPopMenu-prefix.pch"; sourceTree = "<group>"; };
+		0BFF2F6760A0C19AF8ABF690EE440526 /* MWPopMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MWPopMenu-Info.plist"; sourceTree = "<group>"; };
 		183A650A7AD0069CCE616FF864501875 /* Pods-MWPopMenu_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MWPopMenu_Tests-Info.plist"; sourceTree = "<group>"; };
-		1B6C1AB0FE1FE5552B19D9F74807B4E2 /* MWPopMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MWPopMenu-umbrella.h"; sourceTree = "<group>"; };
-		251DB19408F3027B72E964E26AD026D5 /* MWPopMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MWPopMenu.debug.xcconfig; sourceTree = "<group>"; };
-		390A41EE7020F163892F0869B20FC01A /* MWPopMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MWPopMenu-dummy.m"; sourceTree = "<group>"; };
+		235C4B69292406649D163C935BBF0290 /* MWPopMenuItemTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = MWPopMenuItemTableViewCell.xib; path = MWPopMenu/Assets/MWPopMenuItemTableViewCell.xib; sourceTree = "<group>"; };
+		2C1ADA22FD376DB55D84606D4DFC1D0B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		3B50D1BF75FF1504BFEC402C92C6C923 /* MWPopMenu-MWPopMenu */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "MWPopMenu-MWPopMenu"; path = MWPopMenu.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BBD3B4FF98C11122F8E47A9687C6CA3 /* MWPopMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MWPopMenu-dummy.m"; sourceTree = "<group>"; };
 		3BED9F555249BECEEBB7FD9E71921ED9 /* Pods-MWPopMenu_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MWPopMenu_Example-dummy.m"; sourceTree = "<group>"; };
+		3EBEE3DAA634E4734FF4DB9F4AF92F1F /* MWPopMenuModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MWPopMenuModel.swift; path = MWPopMenu/Classes/MWPopMenuModel.swift; sourceTree = "<group>"; };
 		3F5B190DAB4AA476F1E5CDF39454C3CF /* Pods-MWPopMenu_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MWPopMenu_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		475428184880491FEB4FC0B8D4988BCE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		476C102FDDF710A5A9B1FC82CEC64237 /* MWPopMenuConfigure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MWPopMenuConfigure.swift; path = MWPopMenu/Classes/MWPopMenuConfigure.swift; sourceTree = "<group>"; };
 		4F58A4B6CC51624412C315B1E9F638E7 /* Pods-MWPopMenu_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MWPopMenu_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4F58E95153B4145D82B16ACE2092DDF4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		50BDBF6055063B4AD12792CC585CF6E5 /* Pods-MWPopMenu_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MWPopMenu_Example"; path = Pods_MWPopMenu_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		513A92EE1C634F472A9401020C5AB1D8 /* Pods-MWPopMenu_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MWPopMenu_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		52CE5BE4E1E3AFFE5213F22E54318F8C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		5AD45728320A51FD904A12BE059675E7 /* Pods-MWPopMenu_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MWPopMenu_Tests-dummy.m"; sourceTree = "<group>"; };
 		60D090E4A31ECD20B3D3088563E56E77 /* Pods-MWPopMenu_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MWPopMenu_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		642A158FBFA188D61DD6AF441C3635F8 /* MWPopMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MWPopMenu.swift; path = MWPopMenu/Classes/MWPopMenu.swift; sourceTree = "<group>"; };
+		6C09A4278840FD9C818DAFDA90C28790 /* MWPopMenu.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MWPopMenu.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		78951B9D9625028601E960BA53734BC5 /* MWPopMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MWPopMenu.swift; path = MWPopMenu/Classes/MWPopMenu.swift; sourceTree = "<group>"; };
+		804497B7FEEB43AD71A6770D4CC577FC /* ResourceBundle-MWPopMenu-MWPopMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-MWPopMenu-MWPopMenu-Info.plist"; sourceTree = "<group>"; };
 		81708CB512574FFB0F23A284E4B87706 /* Pods-MWPopMenu_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MWPopMenu_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8208AECD8297D3728B4EB1884DD77F64 /* Pods-MWPopMenu_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MWPopMenu_Example-frameworks.sh"; sourceTree = "<group>"; };
+		860CCA90A4E2F1CB5D9161854D75631F /* MWPopMenuConfigure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MWPopMenuConfigure.swift; path = MWPopMenu/Classes/MWPopMenuConfigure.swift; sourceTree = "<group>"; };
 		860DCA773F462C16090C6D580C47BA1B /* Pods-MWPopMenu_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MWPopMenu_Tests-umbrella.h"; sourceTree = "<group>"; };
 		96442D0899AA7BF35345527E4C7B1EA6 /* MWPopMenu */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MWPopMenu; path = MWPopMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D51D57A7FBB622CA233649ECA4E3D9 /* Pods-MWPopMenu_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MWPopMenu_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		974A315D857422C201C0FFD4BBF756EF /* Pods-MWPopMenu_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MWPopMenu_Tests"; path = Pods_MWPopMenu_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BA481E36347D03A5FEC498C40253FD0 /* MWPopMenu.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MWPopMenu.podspec; sourceTree = "<group>"; tabWidth = 2; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AAFB042258EE067C125966D1E2C6BAF3 /* MWPopMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MWPopMenu-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B1ED346B1EC33E9EB90EBFCFD16ED81E /* MWPopMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MWPopMenu.debug.xcconfig; sourceTree = "<group>"; };
 		B584F5FB81CD8FECDB6FA6E2F3DF8E94 /* Pods-MWPopMenu_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MWPopMenu_Tests.modulemap"; sourceTree = "<group>"; };
+		B67534B517F2C2CD4DCB72998D738F00 /* MWPopMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MWPopMenu.modulemap; sourceTree = "<group>"; };
 		BEC4D56A6AD6F3F3E697559837782B0D /* Pods-MWPopMenu_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MWPopMenu_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CC8DB3F492BCCCD15569742593C8561F /* Pods-MWPopMenu_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MWPopMenu_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CEC89701CFDFDF5F97A096E2B0BCE04E /* MWPopMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MWPopMenu-prefix.pch"; sourceTree = "<group>"; };
 		D3923F762EE497C05558DABD9697A3E1 /* Pods-MWPopMenu_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MWPopMenu_Example.modulemap"; sourceTree = "<group>"; };
-		E7D397CB282DD8081C41594282EAC130 /* ResourceBundle-MWPopMenu-MWPopMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-MWPopMenu-MWPopMenu-Info.plist"; sourceTree = "<group>"; };
-		EBB27A54ADDDF6F67C8C43E567326D6E /* MWPopMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MWPopMenu.release.xcconfig; sourceTree = "<group>"; };
+		DEB793C9A6C3F6503D31AFA7D220B3C8 /* screenshot1.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = screenshot1.png; path = docs/screenshot1.png; sourceTree = "<group>"; };
+		DF4EF8B511508CF5266461BA3676C221 /* MWPopMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MWPopMenu.release.xcconfig; sourceTree = "<group>"; };
+		E41E6549EBBD36D2D1C88C28CB2F1AD5 /* MWPopMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MWPopMenu-umbrella.h"; sourceTree = "<group>"; };
+		EDEDD177BB67432CE6921F3785CBC40C /* MWPopMenuItemTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MWPopMenuItemTableViewCell.swift; path = MWPopMenu/Classes/MWPopMenuItemTableViewCell.swift; sourceTree = "<group>"; };
 		F4B02CD8D314AD0C0FE45C2170A59267 /* Pods-MWPopMenu_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MWPopMenu_Example-umbrella.h"; sourceTree = "<group>"; };
 		FFAF6765F230A4A98922BEA720DB1ED0 /* Pods-MWPopMenu_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MWPopMenu_Example-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,7 +116,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EA89CDEFDD49F9CF19514249A3B90872 /* Frameworks */ = {
+		ED38C527541C94D242687BF67CB1A422 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -142,22 +143,6 @@
 			path = "Target Support Files/Pods-MWPopMenu_Example";
 			sourceTree = "<group>";
 		};
-		56F1B5851D2B8F16644611FC3C88C19A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				02C993FD8C35BCE9CDCF94C5830142EA /* MWPopMenu.modulemap */,
-				390A41EE7020F163892F0869B20FC01A /* MWPopMenu-dummy.m */,
-				AAFB042258EE067C125966D1E2C6BAF3 /* MWPopMenu-Info.plist */,
-				16358A46A27ED51A4752D5BD5CD14BB8 /* MWPopMenu-prefix.pch */,
-				1B6C1AB0FE1FE5552B19D9F74807B4E2 /* MWPopMenu-umbrella.h */,
-				251DB19408F3027B72E964E26AD026D5 /* MWPopMenu.debug.xcconfig */,
-				EBB27A54ADDDF6F67C8C43E567326D6E /* MWPopMenu.release.xcconfig */,
-				E7D397CB282DD8081C41594282EAC130 /* ResourceBundle-MWPopMenu-MWPopMenu-Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/MWPopMenu";
-			sourceTree = "<group>";
-		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,10 +151,25 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		7FDFC4D19379282552C496AA2B0849B7 /* MWPopMenu */ = {
+			isa = PBXGroup;
+			children = (
+				78951B9D9625028601E960BA53734BC5 /* MWPopMenu.swift */,
+				860CCA90A4E2F1CB5D9161854D75631F /* MWPopMenuConfigure.swift */,
+				EDEDD177BB67432CE6921F3785CBC40C /* MWPopMenuItemTableViewCell.swift */,
+				235C4B69292406649D163C935BBF0290 /* MWPopMenuItemTableViewCell.xib */,
+				3EBEE3DAA634E4734FF4DB9F4AF92F1F /* MWPopMenuModel.swift */,
+				F00787447726F90526D5CD5F2734E3E5 /* Pod */,
+				D6CA89FCE75BFDC5790FCF1CF1D706A4 /* Support Files */,
+			);
+			name = MWPopMenu;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		8BEC1E4CF2FC398B8330E33AE49E7446 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F8161994479B9680A8E86F900E72DB06 /* MWPopMenu */,
+				7FDFC4D19379282552C496AA2B0849B7 /* MWPopMenu */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -183,16 +183,6 @@
 				974A315D857422C201C0FFD4BBF756EF /* Pods-MWPopMenu_Tests */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		C22020C1127EBF9A6231786BE931B1C8 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				52CE5BE4E1E3AFFE5213F22E54318F8C /* LICENSE */,
-				9BA481E36347D03A5FEC498C40253FD0 /* MWPopMenu.podspec */,
-				475428184880491FEB4FC0B8D4988BCE /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -214,6 +204,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D6CA89FCE75BFDC5790FCF1CF1D706A4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B67534B517F2C2CD4DCB72998D738F00 /* MWPopMenu.modulemap */,
+				3BBD3B4FF98C11122F8E47A9687C6CA3 /* MWPopMenu-dummy.m */,
+				0BFF2F6760A0C19AF8ABF690EE440526 /* MWPopMenu-Info.plist */,
+				CEC89701CFDFDF5F97A096E2B0BCE04E /* MWPopMenu-prefix.pch */,
+				E41E6549EBBD36D2D1C88C28CB2F1AD5 /* MWPopMenu-umbrella.h */,
+				B1ED346B1EC33E9EB90EBFCFD16ED81E /* MWPopMenu.debug.xcconfig */,
+				DF4EF8B511508CF5266461BA3676C221 /* MWPopMenu.release.xcconfig */,
+				804497B7FEEB43AD71A6770D4CC577FC /* ResourceBundle-MWPopMenu-MWPopMenu-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MWPopMenu";
+			sourceTree = "<group>";
+		};
 		ECB98F5060EF717F778BD46144BBDA49 /* Pods-MWPopMenu_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +236,17 @@
 			path = "Target Support Files/Pods-MWPopMenu_Tests";
 			sourceTree = "<group>";
 		};
+		F00787447726F90526D5CD5F2734E3E5 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				4F58E95153B4145D82B16ACE2092DDF4 /* LICENSE */,
+				6C09A4278840FD9C818DAFDA90C28790 /* MWPopMenu.podspec */,
+				2C1ADA22FD376DB55D84606D4DFC1D0B /* README.md */,
+				DEB793C9A6C3F6503D31AFA7D220B3C8 /* screenshot1.png */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		F7DFAA67A0423416EA5724B7F79C83E2 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,21 +254,6 @@
 				ECB98F5060EF717F778BD46144BBDA49 /* Pods-MWPopMenu_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		F8161994479B9680A8E86F900E72DB06 /* MWPopMenu */ = {
-			isa = PBXGroup;
-			children = (
-				642A158FBFA188D61DD6AF441C3635F8 /* MWPopMenu.swift */,
-				476C102FDDF710A5A9B1FC82CEC64237 /* MWPopMenuConfigure.swift */,
-				0E1B77A90FC5265C96F810E8A7081DF5 /* MWPopMenuItemTableViewCell.swift */,
-				0CEF7EAFEFD1A34D2A0C79C2D94F63BB /* MWPopMenuItemTableViewCell.xib */,
-				097F66A3BAF8762EB1E1EC60B3F74FD4 /* MWPopMenuModel.swift */,
-				C22020C1127EBF9A6231786BE931B1C8 /* Pod */,
-				56F1B5851D2B8F16644611FC3C88C19A /* Support Files */,
-			);
-			name = MWPopMenu;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,7 +298,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				20AB4D7AF84DBC1337B204EA5F519BFE /* PBXTargetDependency */,
+				1C2D50702F13B3E6E5D888EFFF134C80 /* PBXTargetDependency */,
 			);
 			name = "Pods-MWPopMenu_Tests";
 			productName = Pods_MWPopMenu_Tests;
@@ -315,7 +317,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				1D6B51DAA6259B26C42D8F9972F208E5 /* PBXTargetDependency */,
+				3B5D319CD9CBE0ED0364B32D9830EAC5 /* PBXTargetDependency */,
 			);
 			name = MWPopMenu;
 			productName = MWPopMenu;
@@ -334,7 +336,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				7322F01B02B1747D74F45DCD411D3951 /* PBXTargetDependency */,
+				1C0B741E1E44B1A8A5DE0AD7EFDA6254 /* PBXTargetDependency */,
 			);
 			name = "Pods-MWPopMenu_Example";
 			productName = Pods_MWPopMenu_Example;
@@ -343,11 +345,11 @@
 		};
 		E229A9D66061546553BA208558506F00 /* MWPopMenu-MWPopMenu */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F0A0CBC904DBE836987E534AB6E7D36C /* Build configuration list for PBXNativeTarget "MWPopMenu-MWPopMenu" */;
+			buildConfigurationList = 2EE0DFF3EC9BAC22D1C0F843DC126058 /* Build configuration list for PBXNativeTarget "MWPopMenu-MWPopMenu" */;
 			buildPhases = (
-				5B0BE3680CEB540F06B5680A26D2DDE2 /* Sources */,
-				EA89CDEFDD49F9CF19514249A3B90872 /* Frameworks */,
-				092A04E7506074174E40C5B9E28E4B61 /* Resources */,
+				B5199A64FF8049BD37EBF51D1300E0B7 /* Sources */,
+				ED38C527541C94D242687BF67CB1A422 /* Frameworks */,
+				C4007994C1D73F037B7F9F8B041F7EC5 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -389,14 +391,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		092A04E7506074174E40C5B9E28E4B61 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				42C4BE6A06C2F964E90304181EBD331B /* MWPopMenuItemTableViewCell.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3E3B886012CADCD70025E11FBE86B24E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -409,6 +403,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4007994C1D73F037B7F9F8B041F7EC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35047AEBDDF117C2CF7BB5F9350041D5 /* MWPopMenuItemTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,18 +436,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B0BE3680CEB540F06B5680A26D2DDE2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7E0248FDB89CB9E5076065FDA3AE7B89 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3EC5343D3748424D4F3478330501F54D /* Pods-MWPopMenu_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5199A64FF8049BD37EBF51D1300E0B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,30 +462,30 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1D6B51DAA6259B26C42D8F9972F208E5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "MWPopMenu-MWPopMenu";
-			target = E229A9D66061546553BA208558506F00 /* MWPopMenu-MWPopMenu */;
-			targetProxy = 42161ADB2A232BC673CC0F01A8E69A8E /* PBXContainerItemProxy */;
-		};
-		20AB4D7AF84DBC1337B204EA5F519BFE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-MWPopMenu_Example";
-			target = E221E9B365678C229BEB4859AD63B6C2 /* Pods-MWPopMenu_Example */;
-			targetProxy = E3F28752F3AA192F1F8895E5798EFFE4 /* PBXContainerItemProxy */;
-		};
-		7322F01B02B1747D74F45DCD411D3951 /* PBXTargetDependency */ = {
+		1C0B741E1E44B1A8A5DE0AD7EFDA6254 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MWPopMenu;
 			target = A5EC9EB9C23B4DECC8ABA54179CF730F /* MWPopMenu */;
-			targetProxy = EC52278900F0EF4945F19000548043F2 /* PBXContainerItemProxy */;
+			targetProxy = 9C93308B59ACC015F3D8BD5776BA19A6 /* PBXContainerItemProxy */;
+		};
+		1C2D50702F13B3E6E5D888EFFF134C80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MWPopMenu_Example";
+			target = E221E9B365678C229BEB4859AD63B6C2 /* Pods-MWPopMenu_Example */;
+			targetProxy = C5226708BB8395A9D6ECCF3FE48E5127 /* PBXContainerItemProxy */;
+		};
+		3B5D319CD9CBE0ED0364B32D9830EAC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MWPopMenu-MWPopMenu";
+			target = E229A9D66061546553BA208558506F00 /* MWPopMenu-MWPopMenu */;
+			targetProxy = 13728763AF8739384485C6CAFF660071 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0612FE997817F32294BA43E602763527 /* Release */ = {
+		015178019110F9F42F3D1B338121B23B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBB27A54ADDDF6F67C8C43E567326D6E /* MWPopMenu.release.xcconfig */;
+			baseConfigurationReference = DF4EF8B511508CF5266461BA3676C221 /* MWPopMenu.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGNING_ALLOWED = NO;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MWPopMenu";
@@ -633,23 +635,6 @@
 			};
 			name = Release;
 		};
-		4DC20AF7988F206A82BBBC27B49661DF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 251DB19408F3027B72E964E26AD026D5 /* MWPopMenu.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGNING_ALLOWED = NO;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MWPopMenu";
-				IBSC_MODULE = MWPopMenu;
-				INFOPLIST_FILE = "Target Support Files/MWPopMenu/ResourceBundle-MWPopMenu-MWPopMenu-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = MWPopMenu;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -705,7 +690,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -713,7 +699,7 @@
 		};
 		9473050FFB6B3755035D446C9A12BC1E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBB27A54ADDDF6F67C8C43E567326D6E /* MWPopMenu.release.xcconfig */;
+			baseConfigurationReference = DF4EF8B511508CF5266461BA3676C221 /* MWPopMenu.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -815,7 +801,7 @@
 		};
 		C401767195113C8D23F642B7AED4B01F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 251DB19408F3027B72E964E26AD026D5 /* MWPopMenu.debug.xcconfig */;
+			baseConfigurationReference = B1ED346B1EC33E9EB90EBFCFD16ED81E /* MWPopMenu.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -845,6 +831,23 @@
 			};
 			name = Debug;
 		};
+		D8B3EC4B0DB251191B7C400754EFB09B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1ED346B1EC33E9EB90EBFCFD16ED81E /* MWPopMenu.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MWPopMenu";
+				IBSC_MODULE = MWPopMenu;
+				INFOPLIST_FILE = "Target Support Files/MWPopMenu/ResourceBundle-MWPopMenu-MWPopMenu-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = MWPopMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -853,6 +856,15 @@
 			buildConfigurations = (
 				A09D2E1229F8447741D9762BD3A3A49A /* Debug */,
 				48335D1A5A2EDCFDDD9E54234D04F613 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EE0DFF3EC9BAC22D1C0F843DC126058 /* Build configuration list for PBXNativeTarget "MWPopMenu-MWPopMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8B3EC4B0DB251191B7C400754EFB09B /* Debug */,
+				015178019110F9F42F3D1B338121B23B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -880,15 +892,6 @@
 			buildConfigurations = (
 				27F4D263F3AA25F13608879DDBAF5EC7 /* Debug */,
 				C0EA89D37915E01F2DBF19D8A98D49E7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F0A0CBC904DBE836987E534AB6E7D36C /* Build configuration list for PBXNativeTarget "MWPopMenu-MWPopMenu" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4DC20AF7988F206A82BBBC27B49661DF /* Debug */,
-				0612FE997817F32294BA43E602763527 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -177,6 +177,12 @@ public class MWPopMenu: UIView {
     ///   - rect: 点击的区域CGRect，通常为控件的frame，需要转换成全屏幕的区域
     /// - Note:
     ///   - 如果设置了rect，会忽略point。将自动判断在控件的上部还是下部显示菜单
+    /// - Important:
+    ///   - navigationBar.isTranslucent = false 的情况下view不能顶到头，因此rect参数最好使用window来计算
+    /// ```
+    /// let window = UIApplication.shared.keyWindow
+    /// let rect = window?.convert(_:from:)
+    /// ```
     public func show(_ point: CGPoint = .zero, _ rect: CGRect? = nil) {
         self.datas = dataSource?.mwMenuDatas(self) ?? []
         if datas.isEmpty {
