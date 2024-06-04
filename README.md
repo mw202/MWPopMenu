@@ -9,7 +9,7 @@
 
 Swift弹出式菜单，[在此](https://www.jianshu.com/p/9d0f50f4a50a)基础上进行优化。
 
-![截图1](/docs/screenshot1.png)
+<img src="/docs/screenshot1.png" width="300">
 
 ## 安装
 
